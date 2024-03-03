@@ -3,13 +3,13 @@ import ListingCard from "@/app/components/listings/ListingCard";
 import EmptyState from "@/app/components/EmptyState";
 
 import getListings, { 
-  IListingParams
+  IListingsParams
 } from "@/app/actions/getListings";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 import ClientOnly from "./components/ClientOnly";
 
 interface HomeProps {
-  searchParams: IListingParams
+  searchParams: IListingsParams
 };
 
 const Home = async ({ searchParams }: HomeProps) => {
